@@ -45,12 +45,13 @@ module.exports = (env) => {
                                         corejs: 3,
                                     },
                                 ],
+                                ['@babel/preset-react'],
                             ],
                         },
                     },
                 },
             ],
         },
-        plugins: [new HtmlWebpackPlugin()],
+        plugins: [new HtmlWebpackPlugin({ template: 'src/index.html' })],
     };
 };
